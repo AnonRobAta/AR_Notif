@@ -6,7 +6,7 @@ AddEventHandler("AR-Notif:SendNotification", function(file, type, text, timeout)
     end
 end)
 
-function HudText(file, type, text, timeout)
+function TextNotif(file, type, text, timeout)
     if CheckIFTrue(file, type, text, timeout) then
         timeout = tonumber(timeout)
         SendNotification(type, text, timeout)
